@@ -1,0 +1,6 @@
+image_id,image_name,disease,description
+1,Leaf_A,Leaf Spot,This disease causes dark spots on leaves, leading to reduced photosynthesis.
+2,Leaf_B,Downy Mildew,Characterized by white, powdery growth on the underside of leaves.
+3,Stem_A,Stem Rot,This disease causes the stem to rot, affecting the plant's stability.
+4,Leaf_C,Yellowing,Leaves turn yellow due to nutrient deficiency or overwatering.
+5,Leaf_D,Bacterial Blight,Dark, water-soaked lesions appear on leaves, often leading to leaf drop.

@@ -1,0 +1,19 @@
+{
+  "annotations": [
+    {
+      "image_id": "image_001",
+      "label": "healthy",
+      "bbox": [100, 150, 200, 250]
+    },
+    {
+      "image_id": "image_002",
+      "label": "disease_1",
+      "bbox": [120, 160, 220, 260]
+    },
+    {
+      "image_id": "image_003",
+      "label": "disease_2",
+      "bbox": [130, 170, 230, 270]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "khoe_manh": {
+    "conclusion": "Cây khỏe mạnh",
+    "name": "Cây khỏe",
+    "description": "Không thấy dấu hiệu bệnh trên lá.",
+    "symptoms": "Màu lá đồng đều, không có đốm hay vết cháy.",
+    "treatment": "Không cần can thiệp.",
+    "recommendations": "Duy trì tưới nước và bón phân hợp lý.",
+    "severity": "Thấp"
+  },
+  "chay_la": {
+    "conclusion": "Bệnh cháy lá",
+    "name": "Cháy lá",
+    "description": "Xuất hiện đốm nâu lớn ở các mép lá, có thể lan rộng.",
+    "symptoms": "Đốm nâu/đen, mép lá khô, lá rụng sớm.",
+    "treatment": [
+      "Loại bỏ và tiêu hủy lá, cành nhiễm.",
+      "Giảm ẩm độ và cải thiện thông gió cho ruộng/vườn.",
+      "Phun thuốc trừ nấm theo hướng dẫn chuyên môn địa phương.",
+      "Luân canh cây trồng, sử dụng giống kháng nếu có."
+    ],
+    "recommendations": "Kiểm tra và xử lý sớm để tránh lây lan.",
+    "severity": "Trung bình"
+  },
+  "dot_la_vi_khuan": {
+    "conclusion": "Bệnh đốm lá do vi khuẩn",
+    "name": "Đốm lá do vi khuẩn",
+    "description": "Đốm nhỏ, viền vàng xung quanh, thường xuất hiện khi thời tiết ẩm ướt.",
+    "symptoms": "Đốm nhỏ, có viền vàng; có thể lan nhanh khi điều kiện ẩm.",
+    "treatment": [
+      "Loại bỏ bộ phận nhiễm nặng và tiêu hủy.",
+      "Sử dụng thuốc sát khuẩn theo khuyến cáo địa phương.",
+      "Giảm độ ẩm, tránh tưới ướt trực tiếp lên lá."
+    ],
+    "recommendations": "Khử trùng dụng cụ, theo dõi sau điều trị.",
+    "severity": "Trung bình"
+  }
+}

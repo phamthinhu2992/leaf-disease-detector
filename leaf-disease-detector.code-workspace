@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "name": "client",
+      "path": "client"
+    },
+    {
+      "name": "server",
+      "path": "server"
+    },
+    {
+      "name": "model",
+      "path": "model"
+    },
+    {
+      "name": "data",
+      "path": "data"
+    },
+    {
+      "name": "tests",
+      "path": "tests"
+    },
+    {
+      "name": ".vscode",
+      "path": ".vscode"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+}
