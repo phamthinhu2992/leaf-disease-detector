@@ -1,13 +1,633 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaf Disease Detector</title>
-    <link rel="stylesheet" href="%PUBLIC_URL%/styles/main.css">
+    <title>🌿 Hệ Thống Phân Tích Bệnh Lá Cây - AI Thông Minh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #059669;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: white;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #059669;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5em;
+            color: #059669;
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            color: #6b7280;
+            font-size: 1.1em;
+        }
+
+        /* Diseases Section */
+        .diseases-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2.2em;
+            color: #1f2937;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .diseases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .disease-badge {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 2px solid #059669;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .disease-badge:hover {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+            transform: translateY(-2px);
+        }
+
+        .disease-emoji {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+
+        .disease-name {
+            font-weight: bold;
+            color: #059669;
+            font-size: 0.95em;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background: #f3f4f6;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #1f2937;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: #6b7280;
+            margin-top: 0;
+            line-height: 1.6;
+        }
+
+        .faq-answer.show {
+            max-height: 500px;
+            margin-top: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            padding: 40px 20px;
+            margin-top: 80px;
+            text-align: center;
+            border-top: 2px solid #e5e7eb;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #6b7280;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #059669;
+        }
+
+        .footer-bottom {
+            color: #6b7280;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 0.9em;
+            }
+
+            .diseases-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+
+            .diseases-section,
+            .faq-section {
+                padding: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div id="root"></div>
-    <script src="%PUBLIC_URL%/index.js"></script>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">🌿 AgroDiseaseAI</div>
+                <ul class="nav-links">
+                    <li><a href="/">Trang Chủ</a></li>
+                    <li><a href="/upload.html">Phân Tích</a></li>
+                    <li><a href="/dashboard.html">Lịch Sử</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>🌿 Phân Tích Bệnh Lá Cây Bằng AI</h1>
+            <p>Hệ thống chẩn đoán thông minh dành cho nông dân Việt Nam. Upload ảnh lá cây để nhận chẩn đoán chính xác
+                và kế hoạch xử lí chi tiết trong vòng vài giây</p>
+            <div class="cta-buttons">
+                <a href="/upload.html" class="btn btn-primary">
+                    📸 Bắt Đầu Phân Tích
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    📚 Tìm Hiểu Thêm
+                </a>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div id="features" class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <div class="feature-title">AI Thông Minh</div>
+                <div class="feature-desc">
+                    Công nghệ machine learning tiên tiến để phân tích chính xác hình ảnh lá cây
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-title">Kết Quả Nhanh</div>
+                <div class="feature-desc">
+                    Nhận kết quả chẩn đoán chi tiết chỉ trong vài giây sau khi upload ảnh
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">Phân Tích Chi Tiết</div>
+                <div class="feature-desc">
+                    Kế hoạch xử lí tuần-by-tuần, đánh giá rủi ro, và hướng dẫn chi tiết cho nông dân
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌾</div>
+                <div class="feature-title">22+ Loại Bệnh</div>
+                <div class="feature-desc">
+                    Hỗ trợ phát hiện hơn 22 loại bệnh phổ biến trên các cây trồng Việt Nam
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <div class="feature-title">Bản Đồ Khu Vực</div>
+                <div class="feature-desc">
+                    Phân tích dựa trên điều kiện địa phương, mùa vụ và xu hướng bệnh tật
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">Dễ Sử Dụng</div>
+                <div class="feature-desc">
+                    Giao diện thân thiện, dễ sử dụng cho mọi nông dân, từ nhỏ đến lớn
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <div class="stat-item">
+                <h3>22+</h3>
+                <p>Loại bệnh được nhận diện</p>
+            </div>
+            <div class="stat-item">
+                <h3>8</h3>
+                <p>Loại cây được hỗ trợ</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Độ chính xác trung bình</p>
+            </div>
+            <div class="stat-item">
+                <h3>&lt;5s</h3>
+                <p>Thời gian phân tích</p>
+            </div>
+        </div>
+
+        <!-- Diseases Section -->
+        <div class="diseases-section">
+            <h2 class="section-title">🌾 Các Loại Cây Được Hỗ Trợ</h2>
+            <p class="section-subtitle">Hệ thống có thể phân tích bệnh trên các cây trồng này</p>
+            <div class="diseases-grid">
+                <div class="disease-badge">
+                    <div class="disease-emoji">🌾</div>
+                    <div class="disease-name">Lúa</div>
+                </div>
+                <div class="disease-badge">
+                    <div class="disease-emoji">☕</div>
+                    <div class="disease-name">Cà phê</div>
+                </div>
+                <div class="disease-badge">
+                    <div class="disease-emoji">🌶️</div>
+                    <div class="disease-name">Tiêu</div>
+                </div>
+                <div class="disease-badge">
+                    <div class="disease-emoji">🥜</div>
+                    <div class="disease-name">Đậu phộng</div>
+                </div>
+                <div class="disease-badge">
+                    <div class="disease-emoji">🌱</div>
+                    <div class="disease-name">Khoai mì</div>
+                </div>
+                <div class="disease-badge">
+                    <div class="disease-emoji">🍠</div>
+                    <div class="disease-name">Khoai lang</div>
+                </div>
+                <div class="disease-badge">
+                    <div class="disease-emoji">🍅</div>
+                    <div class="disease-name">Cà chua</div>
+                </div>
+                <div class="disease-badge">
+                    <div class="disease-emoji">🥬</div>
+                    <div class="disease-name">Rau cải</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2 class="section-title">❓ Câu Hỏi Thường Gặp</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Làm sao để tải ảnh phân tích?</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Vào trang "Phân Tích" hoặc nhấp nút "Bắt Đầu Phân Tích". Kéo thả ảnh lá cây hoặc nhấp để chọn file.
+                    Đảm bảo ảnh rõ ràng, sắc nét và có ánh sáng tốt.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Định dạng ảnh nào được hỗ trợ?</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Hệ thống hỗ trợ JPG, PNG, GIF và các định dạng ảnh phổ biến khác. Kích thước file tối đa là 10MB.
+                    Lời khuyên: ảnh JPG thường cho kết quả tốt nhất.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Kết quả phân tích có chính xác không?</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Hệ thống có độ chính xác trung bình 95%. Tuy nhiên, để kết quả tốt nhất, vui lòng: 1) Chụp ảnh rõ
+                    ràng, 2) Đặt tên file chứa tên cây, 3) Cung cấp thông tin môi trường chính xác.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Có phí sử dụng không?</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Hệ thống hoàn toàn miễn phí cho nông dân Việt Nam. Không có phí ẩn, không cần đăng ký. Bạn có thể
+                    phân tích không giới hạn số lần.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Nếu chẩn đoán sai thì sao?</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Hệ thống luôn khuyến khích liên hệ với chuyên gia nông nghiệp địa phương nếu kết quả không rõ ràng
+                    hoặc chẩn đoán không hiệu quả. Kết quả của hệ thống là hỗ trợ, không thay thế ý kiến chuyên gia.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Dữ liệu của tôi có được lưu giữ không?</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Có, lịch sử phân tích được lưu giữ để bạn có thể xem lại. Dữ liệu được bảo vệ an toàn. Bạn có thể
+                    xóa lịch sử bất cứ lúc nào từ trang Dashboard.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🌿 Về Chúng Tôi</h4>
+                    <p style="color: #6b7280;">Hệ thống phân tích bệnh lá cây bằng AI, được phát triển đặc biệt cho nông
+                        dân Việt Nam nhằm giúp cải thiện năng suất và chất lượng cây trồng.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>🔗 Liên Kết Nhanh</h4>
+                    <a href="/">Trang Chủ</a>
+                    <a href="/upload.html">Phân Tích Ảnh</a>
+                    <a href="/dashboard.html">Lịch Sử</a>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 Hỗ Trợ</h4>
+                    <a href="mailto:support@agrodiseaseai.com">📧 Email: support@agrodiseaseai.com</a>
+                    <a href="tel:+84xxx">📱 Hotline: 1900XXXX</a>
+                    <a href="#">💬 Chat với bác sĩ AI</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AgroDiseaseAI - Phân tích bệnh lá cây thông minh cho nông dân Việt Nam</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function () {
+                const answer = this.querySelector('.faq-answer');
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
+
 </html>

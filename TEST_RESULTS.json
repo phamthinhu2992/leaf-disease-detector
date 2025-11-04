@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-11-02T12:15:03.989691",
+  "api_base": "http://127.0.0.1:8765",
+  "tests": [],
+  "summary": {
+    "total": 16,
+    "passed": 0,
+    "failed": 16,
+    "errors": [
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A09E70E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A09CB4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/diseases (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A09CBED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/diseases/search?q=early (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A09CF950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/test-predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A09CEFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/crops/user/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A4E0F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/crops/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6CF30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/crops/search?query=tomato (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6E030>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/crops/nearby?lat=11.94&lon=109.19&radius=50 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6E250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/weather/forecast?lat=11.94&lon=109.19 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6E470>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/weather/auto-location (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6E690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/weather/extended?lat=11.94&lon=109.19 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6E8B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/chatbot/health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6EAD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/chatbot/suggestions?crop_type=tomato (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6ECF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /api/chatbot/disease-info/early_blight (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6EF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "HTTPConnectionPool(host='127.0.0.1', port=8765): Max retries exceeded with url: /test-upload (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000261A0A6F350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"
+    ]
+  }
+}

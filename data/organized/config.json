@@ -1,0 +1,29 @@
+{
+  "dataset": {
+    "path": "data/organized",
+    "type": "organized_by_crop_disease",
+    "crops": [
+      "Tomato",
+      "Pepper",
+      "Potato"
+    ],
+    "input_size": [
+      224,
+      224
+    ],
+    "num_classes": 15
+  },
+  "training": {
+    "batch_size": 32,
+    "epochs_pretrain": 50,
+    "epochs_finetune": 30,
+    "learning_rate": 0.001,
+    "val_split": 0.2,
+    "test_split": 0.1
+  },
+  "model": {
+    "architecture": "MobileNetV2+CBAM",
+    "pretrained": true,
+    "frozen_layers": 100
+  }
+}

@@ -1,0 +1,88 @@
+📋 DEPLOYMENT CHECKLIST - Cách 3
+
+═══════════════════════════════════════════════
+
+✅ PHASE 1: HUGGINGFACE UPLOAD (10 min)
+
+□ Go to https://huggingface.co → Sign up/Login
+□ Create new Model: "leaf-disease-detector"
+□ Upload 3 files from model/ folder:
+  □ efficientnetb0_notop.h5 (16.7 MB)
+  □ plant_disease_model.h5 (39.7 MB)
+  □ mango_model.h5 (49.1 MB)
+□ Copy model URLs → Save in CONFIG_TEMPLATE.md
+
+═══════════════════════════════════════════════
+
+✅ PHASE 2: UPDATE CONFIGURATION (5 min)
+
+□ Open: utils/downloadModels.js
+□ Find: const MODELS = [
+□ Replace USERNAME with your HuggingFace username
+  Example: USERNAME → johndoe
+□ Save file
+□ Test locally: npm start
+□ Verify models download in console
+
+═══════════════════════════════════════════════
+
+✅ PHASE 3: GITHUB PUSH (5 min)
+
+□ Open terminal
+□ Run commands:
+  □ git init
+  □ git config user.name "Your Name"
+  □ git config user.email "your@email.com"
+  □ git add .
+  □ git commit -m "Ready for deployment"
+  □ git branch -M main
+  □ git remote add origin https://github.com/YOU/leaf-disease-detector
+  □ git push -u origin main
+□ Verify on GitHub
+
+═══════════════════════════════════════════════
+
+✅ PHASE 4: RENDER DEPLOY (5 min)
+
+□ Go to https://render.com → Sign up
+□ Click: New Web Service
+□ Connect GitHub → Select leaf-disease-detector
+□ Configure:
+  □ Build: npm install && npm run build
+  □ Start: npm start
+  □ Plan: Free
+□ Click Deploy
+□ Wait 2-3 minutes...
+□ Get public URL: https://leaf-disease-detector.onrender.com
+
+═══════════════════════════════════════════════
+
+✅ PHASE 5: TEST & SHARE
+
+□ Open public URL in browser
+□ Upload test image
+□ Verify all 4 models work
+□ Test camera capture
+□ Share URL with friends!
+
+═══════════════════════════════════════════════
+
+TOTAL TIME: ~30 minutes
+
+Result: Public AI system with:
+  ✅ 4 trained models
+  ✅ Image upload & camera
+  ✅ Disease detection
+  ✅ AI chatbot
+  ✅ Weather data
+  ✅ 24/7 uptime
+  ✅ No password needed
+
+═══════════════════════════════════════════════
+
+Need help? Check these files:
+  📄 DEPLOYMENT_STEP_BY_STEP.md
+  📄 CONFIG_TEMPLATE.md
+  📄 QUICK_DEPLOY_GUIDE.md
+
+═══════════════════════════════════════════════

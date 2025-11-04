@@ -1,0 +1,29 @@
+
+🌿 LEAF DISEASE DETECTOR - PUBLIC SHARING
+Generated: 21:54:21 4/11/2025
+
+LOCAL NETWORK:
+  URL: http://192.168.1.6:3000
+  Use this if on same WiFi
+
+INTERNET SHARING (Different Network):
+  
+Method 1 - TunnelTo (Recommended):
+  ssh -R 80:localhost:3000 tunnelto.dev
+  
+Method 2 - ngrok:
+  ngrok http 3000
+  
+Method 3 - Cloudflare:
+  cloudflared tunnel --url http://localhost:3000
+
+FEATURES AVAILABLE:
+  ✅ Upload/Camera photo
+  ✅ 4 AI models for detection
+  ✅ Weather & disease forecasting
+  ✅ AI chatbot
+  ✅ Disease database
+  ✅ NO PASSWORD REQUIRED
+
+DIRECT SERVER (Local Machine Only):
+  http://localhost:8765

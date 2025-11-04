@@ -1,0 +1,7 @@
+tunnel: leaf-disease-detector
+credentials-file: /root/.cloudflare/.warp/config/tunnel-creds.json
+
+ingress:
+  - hostname: leaf-disease-detector.tunnelto.io
+    service: http://localhost:3000
+  - service: http_status:404

@@ -1,0 +1,471 @@
+{
+    "diseases": {
+        "apple_scab": {
+            "name": "Đốm lá táo",
+            "scientificName": "Venturia inaequalis",
+            "description": "Bệnh đốm lá táo là một trong những bệnh phổ biến nhất trên cây táo, gây ra bởi nấm Venturia inaequalis. Bệnh ảnh hưởng đến lá, quả và cành non.",
+            "symptoms": [
+                "Đốm tròn màu nâu đen trên lá",
+                "Lá vàng và rụng sớm",
+                "Đốm trên quả táo",
+                "Biến dạng quả"
+            ],
+            "causes": [
+                "Độ ẩm cao",
+                "Nhiệt độ từ 15-25°C",
+                "Mưa phùn kéo dài",
+                "Thông gió kém"
+            ],
+            "treatment": [
+                "Xịt thuốc diệt nấm đồng",
+                "Loại bỏ lá bệnh",
+                "Cải thiện thông gió",
+                "Tỉa cành định kỳ"
+            ],
+            "prevention": [
+                "Chọn giống kháng bệnh",
+                "Tưới ở gốc, không tưới lên lá",
+                "Giữ khoảng cách giữa các cây",
+                "Thu dọn lá rụng"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_đốm_lá_táo",
+            "searchKeywords": [
+                "apple scab",
+                "venturia inaequalis",
+                "đốm lá táo",
+                "bệnh táo"
+            ]
+        },
+        "tomato_early_blight": {
+            "name": "Cháy lá sớm cà chua",
+            "scientificName": "Alternaria solani",
+            "description": "Bệnh cháy lá sớm là một bệnh nấm phổ biến trên cà chua, gây ra bởi Alternaria solani. Bệnh ảnh hưởng đến lá, thân và quả.",
+            "symptoms": [
+                "Đốm tròn có vòng đồng tâm trên lá",
+                "Lá vàng từ dưới lên trên",
+                "Đốm nâu trên thân",
+                "Thối quả từ cuống"
+            ],
+            "causes": [
+                "Nhiệt độ cao 24-29°C",
+                "Độ ẩm cao",
+                "Cây yếu, thiếu dinh dưỡng",
+                "Tưới nước lên lá"
+            ],
+            "treatment": [
+                "Xịt thuốc chứa đồng",
+                "Cắt bỏ lá bệnh",
+                "Cải thiện dinh dưỡng",
+                "Giảm độ ẩm"
+            ],
+            "prevention": [
+                "Luân canh cây trồng",
+                "Tưới nhỏ giọt",
+                "Bón phân cân bằng",
+                "Trồng cây kháng bệnh"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_cháy_lá_cà_chua",
+            "searchKeywords": [
+                "tomato early blight",
+                "alternaria solani",
+                "cháy lá cà chua",
+                "bệnh cà chua"
+            ]
+        },
+        "corn_leaf_blight": {
+            "name": "Cháy lá ngô",
+            "scientificName": "Exserohilum turcicum",
+            "description": "Bệnh cháy lá phía bắc ngô là bệnh nấm nghiêm trọng, gây thiệt hại lớn cho cây ngô, đặc biệt ở vùng khí hậu ẩm ướt.",
+            "symptoms": [
+                "Vết loang màu xám xanh trên lá",
+                "Vết bệnh hình thoi dài",
+                "Lá khô và chết từ dưới lên",
+                "Giảm năng suất đáng kể"
+            ],
+            "causes": [
+                "Nhiệt độ 18-27°C",
+                "Độ ẩm tương đối cao >90%",
+                "Sương muối kéo dài",
+                "Trồng dày đặc"
+            ],
+            "treatment": [
+                "Xịt thuốc triazole",
+                "Tăng cường dinh dưỡng",
+                "Cải thiện thoát nước",
+                "Loại bỏ cây bệnh"
+            ],
+            "prevention": [
+                "Sử dụng giống kháng bệnh",
+                "Luân canh với cây họ đậu",
+                "Gieo trồng đúng mật độ",
+                "Theo dõi thời tiết"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_cháy_lá_ngô",
+            "searchKeywords": [
+                "corn leaf blight",
+                "exserohilum turcicum",
+                "cháy lá ngô",
+                "bệnh ngô"
+            ]
+        },
+        "potato_late_blight": {
+            "name": "Cháy lá muộn khoai tây",
+            "scientificName": "Phytophthora infestans",
+            "description": "Bệnh cháy lá muộn khoai tây là một trong những bệnh nguy hiểm nhất của khoai tây, từng gây ra nạn đói Ireland vào thế kỷ 19.",
+            "symptoms": [
+                "Vết nâu sẫm ở mép lá",
+                "Lớp nấm trắng dưới lá",
+                "Thối đen củ khoai tây",
+                "Cây chết nhanh chóng"
+            ],
+            "causes": [
+                "Nhiệt độ 15-20°C",
+                "Độ ẩm rất cao",
+                "Mưa liên tục",
+                "Sương muối dày đặc"
+            ],
+            "treatment": [
+                "Xịt thuốc metalaxyl",
+                "Ngừng tưới nước",
+                "Cải thiện thoát nước",
+                "Thu hoạch sớm"
+            ],
+            "prevention": [
+                "Trồng giống kháng bệnh",
+                "Luân canh 3-4 năm",
+                "Theo dõi dự báo thời tiết",
+                "Xịt phòng bệnh định kỳ"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_cháy_lá_muộn_khoai_tây",
+            "searchKeywords": [
+                "potato late blight",
+                "phytophthora infestans",
+                "cháy lá muộn",
+                "bệnh khoai tây"
+            ]
+        },
+        "grape_black_rot": {
+            "name": "Thối đen nho",
+            "scientificName": "Guignardia bidwellii",
+            "description": "Bệnh thối đen nho là bệnh nấm nghiêm trọng ảnh hưởng đến lá, cành và quả nho, có thể làm mất toàn bộ vụ thu hoạch.",
+            "symptoms": [
+                "Đốm tròn nâu có viền đen trên lá",
+                "Quả nho chuyển màu nâu đen",
+                "Quả khô thành nho khô",
+                "Vết loang trên cành non"
+            ],
+            "causes": [
+                "Nhiệt độ 20-25°C",
+                "Độ ẩm cao kéo dài",
+                "Mưa trong thời kỳ ra hoa",
+                "Vệ sinh vườn kém"
+            ],
+            "treatment": [
+                "Xịt thuốc đồng hydroxide",
+                "Cắt bỏ cành và quả bệnh",
+                "Cải thiện thông gió",
+                "Kiểm soát độ ẩm"
+            ],
+            "prevention": [
+                "Tỉa cành hợp lý",
+                "Thu dọn tàn dư thực vật",
+                "Xịt phòng bệnh đầu mùa",
+                "Trồng giống kháng bệnh"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_thối_đen_nho",
+            "searchKeywords": [
+                "grape black rot",
+                "guignardia bidwellii",
+                "thối đen nho",
+                "bệnh nho"
+            ]
+        },
+        "rice_blast": {
+            "name": "Bệnh đạo ôn lúa",
+            "scientificName": "Magnaporthe oryzae",
+            "description": "Bệnh đạo ôn lúa là một trong những bệnh nguy hiểm nhất của lúa, có thể gây thiệt hại nghiêm trọng cho năng suất.",
+            "symptoms": [
+                "Vết đạo ôn hình thoi trên lá",
+                "Vết có tâm xám, viền nâu",
+                "Cổ bông bị gãy",
+                "Hạt lúa lép"
+            ],
+            "causes": [
+                "Nhiệt độ 25-28°C",
+                "Độ ẩm cao",
+                "Sương muối dày",
+                "Bón đạm quá nhiều"
+            ],
+            "treatment": [
+                "Xịt tricyclazole",
+                "Giảm lượng đạm",
+                "Thoát nước ruộng",
+                "Tăng cường kali"
+            ],
+            "prevention": [
+                "Sử dụng giống kháng bệnh",
+                "Bón phân cân bằng",
+                "Quản lý nước hợp lý",
+                "Luân canh cây trồng"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_đạo_ôn_lúa",
+            "searchKeywords": [
+                "rice blast",
+                "magnaporthe oryzae",
+                "đạo ôn lúa",
+                "bệnh lúa"
+            ]
+        },
+        "rice_brown_spot": {
+            "name": "Bệnh đốm nâu lúa",
+            "scientificName": "Bipolaris oryzae",
+            "description": "Bệnh đốm nâu lúa là bệnh phổ biến ở Việt Nam, đặc biệt nghiêm trọng khi lúa thiếu dinh dưỡng và điều kiện bất lợi.",
+            "symptoms": [
+                "Đốm nâu tròn hoặc oval trên lá",
+                "Vết bệnh có viền vàng",
+                "Hạt lúa có đốm nâu",
+                "Lá héo vàng sớm"
+            ],
+            "causes": [
+                "Thiếu kali, photpho",
+                "Độ ẩm cao kéo dài",
+                "Cây yếu, suy dinh dưỡng",
+                "Nhiệt độ 25-30°C"
+            ],
+            "treatment": [
+                "Bón bổ sung kali",
+                "Xịt thuốc strobilurin",
+                "Cải thiện dinh dưỡng",
+                "Thoát nước ruộng"
+            ],
+            "prevention": [
+                "Bón phân cân bằng NPK",
+                "Chọn giống kháng bệnh",
+                "Quản lý nước hợp lý",
+                "Không để cây đói"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_đốm_nâu_lúa",
+            "searchKeywords": [
+                "rice brown spot",
+                "bipolaris oryzae",
+                "đốm nâu lúa",
+                "bệnh lúa"
+            ]
+        },
+        "rice_bacterial_blight": {
+            "name": "Bệnh bạc lá lúa",
+            "scientificName": "Xanthomonas oryzae",
+            "description": "Bệnh bạc lá lúa là bệnh vi khuẩn nguy hiểm, thường xuất hiện ở các vùng trồng lúa chuyên canh có mật độ cao.",
+            "symptoms": [
+                "Vệt dài màu vàng từ mép lá",
+                "Lá héo khô từ đầu lá",
+                "Tiết dịch vi khuẩn màu vàng",
+                "Bông lúa không trổ đều"
+            ],
+            "causes": [
+                "Nhiệt độ 25-30°C",
+                "Độ ẩm rất cao",
+                "Nước ngập sâu",
+                "Vết thương trên lá"
+            ],
+            "treatment": [
+                "Xịt kháng sinh streptomycin",
+                "Giảm mực nước ruộng",
+                "Tăng cường kali",
+                "Loại bỏ cây bệnh"
+            ],
+            "prevention": [
+                "Trồng giống kháng bệnh",
+                "Khử trùng hạt giống",
+                "Quản lý nước hợp lý",
+                "Tránh làm tổn thương cây"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_bạc_lá_lúa",
+            "searchKeywords": [
+                "rice bacterial blight",
+                "xanthomonas oryzae",
+                "bạc lá lúa",
+                "bệnh vi khuẩn lúa"
+            ]
+        },
+        "rice_sheath_blight": {
+            "name": "Bệnh khô vằn lúa",
+            "scientificName": "Rhizoctonia solani",
+            "description": "Bệnh khô vằn lúa là bệnh nấm phổ biến ở Việt Nam, đặc biệt nghiêm trọng trong điều kiện độ ẩm cao và trồng dày.",
+            "symptoms": [
+                "Vết oval màu xám trên bẹ lá",
+                "Vết bệnh có viền nâu",
+                "Lan từ bẹ lá lên thân",
+                "Cây đổ ngã khi nặng"
+            ],
+            "causes": [
+                "Độ ẩm cao >85%",
+                "Nhiệt độ 28-32°C",
+                "Trồng dày đặc",
+                "Bón đạm quá nhiều"
+            ],
+            "treatment": [
+                "Xịt propiconazole",
+                "Thoát nước ruộng",
+                "Cắt bỏ phần bệnh",
+                "Giảm mật độ cây"
+            ],
+            "prevention": [
+                "Trồng đúng mật độ",
+                "Bón phân cân bằng",
+                "Quản lý nước tốt",
+                "Luân canh cây trồng"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_khô_vằn_lúa",
+            "searchKeywords": [
+                "rice sheath blight",
+                "rhizoctonia solani",
+                "khô vằn lúa",
+                "bệnh lúa"
+            ]
+        },
+        "cassava_mosaic": {
+            "name": "Bệnh khảm sắn",
+            "scientificName": "Cassava mosaic virus",
+            "description": "Bệnh khảm sắn là bệnh virus nghiêm trọng ảnh hưởng đến cây sắn ở Việt Nam, làm giảm năng suất củ đáng kể.",
+            "symptoms": [
+                "Lá có màu xanh - vàng xen kẽ",
+                "Lá nhỏ, biến dạng",
+                "Cây còi cọc, chậm phát triển",
+                "Củ nhỏ, ít tinh bột"
+            ],
+            "causes": [
+                "Ruồi trắng truyền bệnh",
+                "Sử dụng giống nhiễm bệnh",
+                "Khí hậu khô, nóng",
+                "Mật độ ruồi trắng cao"
+            ],
+            "treatment": [
+                "Diệt ruồi trắng",
+                "Cắt bỏ cành bệnh",
+                "Phun dầu neem",
+                "Cách ly cây bệnh"
+            ],
+            "prevention": [
+                "Sử dụng giống sạch bệnh",
+                "Kiểm soát ruồi trắng",
+                "Luân canh cây trồng",
+                "Theo dõi định kỳ"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_khảm_sắn",
+            "searchKeywords": [
+                "cassava mosaic",
+                "cassava mosaic virus",
+                "khảm sắn",
+                "bệnh sắn"
+            ]
+        },
+        "sweet_potato_virus": {
+            "name": "Bệnh virus khoai lang",
+            "scientificName": "Sweet potato virus complex",
+            "description": "Bệnh virus khoai lang bao gồm nhiều loại virus khác nhau, ảnh hưởng nghiêm trọng đến năng suất khoai lang ở Việt Nam.",
+            "symptoms": [
+                "Lá vàng, có đốm khảm",
+                "Lá nhăn, biến dạng",
+                "Cây thấp tịt, chậm lớn",
+                "Củ nhỏ, chất lượng kém"
+            ],
+            "causes": [
+                "Rệp truyền virus",
+                "Giống nhiễm bệnh",
+                "Khí hậu thuận lợi cho rệp",
+                "Vệ sinh kém"
+            ],
+            "treatment": [
+                "Diệt trừ rệp",
+                "Loại bỏ cây bệnh",
+                "Xịt dầu neem",
+                "Cách ly vùng bệnh"
+            ],
+            "prevention": [
+                "Sử dụng giống sạch",
+                "Kiểm soát côn trùng",
+                "Luân canh 2-3 năm",
+                "Vệ sinh đồng ruộng"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_virus_khoai_lang",
+            "searchKeywords": [
+                "sweet potato virus",
+                "virus khoai lang",
+                "bệnh khoai lang"
+            ]
+        },
+        "sugarcane_red_rot": {
+            "name": "Bệnh thối đỏ mía",
+            "scientificName": "Colletotrichum falcatum",
+            "description": "Bệnh thối đỏ mía là bệnh nấm nguy hiểm nhất của cây mía ở Việt Nam, có thể làm chết toàn bộ đồng ruộng.",
+            "symptoms": [
+                "Lá úa vàng từ đầu lá",
+                "Thân mía có vệt đỏ bên trong",
+                "Mùi chua khi cắt thân",
+                "Cây chết từng khúc"
+            ],
+            "causes": [
+                "Nhiệt độ 25-30°C",
+                "Độ ẩm cao",
+                "Vết thương trên thân",
+                "Giống kém kháng bệnh"
+            ],
+            "treatment": [
+                "Cắt bỏ phần bệnh",
+                "Xịt thuốc carbendazim",
+                "Cải thiện thoát nước",
+                "Tăng cường dinh dưỡng"
+            ],
+            "prevention": [
+                "Trồng giống kháng bệnh",
+                "Khử trùng dao cắt",
+                "Tránh làm thương thân",
+                "Luân canh hợp lý"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_thối_đỏ_mía",
+            "searchKeywords": [
+                "sugarcane red rot",
+                "colletotrichum falcatum",
+                "thối đỏ mía",
+                "bệnh mía"
+            ]
+        },
+        "peanut_leaf_spot": {
+            "name": "Bệnh đốm lá lạc",
+            "scientificName": "Cercospora arachidicola",
+            "description": "Bệnh đốm lá lạc là bệnh nấm phổ biến ở Việt Nam, ảnh hưởng nghiêm trọng đến quá trình quang hợp và năng suất.",
+            "symptoms": [
+                "Đốm nhỏ màu nâu trên lá",
+                "Đốm có viền vàng",
+                "Lá vàng và rụng sớm",
+                "Giảm năng suất đậu"
+            ],
+            "causes": [
+                "Độ ẩm cao >80%",
+                "Nhiệt độ 25-30°C",
+                "Mưa nhiều kéo dài",
+                "Thông gió kém"
+            ],
+            "treatment": [
+                "Xịt thuốc chlorothalonil",
+                "Cải thiện thoát nước",
+                "Tăng cường kali",
+                "Loại bỏ lá bệnh"
+            ],
+            "prevention": [
+                "Trồng giống kháng bệnh",
+                "Luân canh 3-4 năm",
+                "Gieo đúng mật độ",
+                "Xịt phòng bệnh sớm"
+            ],
+            "wikiUrl": "https://vi.wikipedia.org/wiki/Bệnh_đốm_lá_lạc",
+            "searchKeywords": [
+                "peanut leaf spot",
+                "cercospora arachidicola",
+                "đốm lá lạc",
+                "bệnh lạc"
+            ]
+        }
+    }
+}
