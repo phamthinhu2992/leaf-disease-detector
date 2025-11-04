@@ -6,3 +6,19 @@ __pycache__/
 *.pyc
 *.log
 .DS_Store
+
+# Model files - downloaded from HuggingFace at runtime
+*.h5
+model/*.h5
+efficientnetb0_notop.h5
+plant_disease_model.h5
+mango_model.h5
+
+# Large files
+*.exe
+cloudflared.exe
+
+# Database
+*.db
+database/disease_detector.db
+
