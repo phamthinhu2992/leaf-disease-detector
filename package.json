@@ -4,7 +4,7 @@
   "description": "A web application for detecting plant diseases through image analysis.",
   "main": "server/src/index.ts",
   "scripts": {
-    "start": "node server/dist/index.js",
+    "start": "python model/download_models.py && node server/dist/index.js",
     "build": "cd server && npm run build",
     "test": "jest",
     "dev": "concurrently \"npm run server\" \"npm run client\"",

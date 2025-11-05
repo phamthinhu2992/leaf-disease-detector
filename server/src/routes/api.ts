@@ -360,7 +360,7 @@ router.post('/predict-mango', upload.single('image'), async (req, res) => {
 // POST /api/predict-multi - Multi-model ensemble prediction (6 models)
 router.post('/predict-multi', upload.single('image'), async (req, res) => {
     const startTime = Date.now();
-    
+
     try {
         if (!req.file) {
             return res.status(400).json({
@@ -370,7 +370,7 @@ router.post('/predict-multi', upload.single('image'), async (req, res) => {
         }
 
         console.log('🔄 Multi-model prediction starting...');
-        
+
         // This would use the multiModelH5Service
         // For now, return a placeholder
         const result = {
