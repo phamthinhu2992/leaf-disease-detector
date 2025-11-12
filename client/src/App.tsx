@@ -10,8 +10,8 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="app-header">
-        <h1>🌿 Máy Dò Bệnh Lá Cây Thông Minh</h1>
-        <p>Sử dụng AI để phát hiện bệnh cây trồng từ hình ảnh</p>
+        <h1>🌿Lá nói bệnh-LeafAI</h1>
+        <p>Giải pháp công nghệ nhận diện bệnh thực vật từ hình ảnh</p>
       </header>
 
       <nav className="app-nav">

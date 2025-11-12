@@ -8,6 +8,7 @@ import apiRoutes from './routes/api';
 import cropsRoutes from './routes/crops';
 import weatherRoutes from './routes/weather';
 import chatbotRoutes from './routes/chatbot';
+import trainingRoutes from './routes/training';
 import openaiService from './services/openaiService';
 import diseaseService from './services/diseaseService';
 import { initDatabase } from './services/databaseService';
@@ -2111,6 +2112,8 @@ app.use('/api', apiRoutes);
 app.use('/api/crops', cropsRoutes);
 app.use('/api/weather', weatherRoutes);
 app.use('/api/chatbot', chatbotRoutes);
+app.use('/api/training', trainingRoutes);
+
 
 // SPA Fallback: Serve index.html for all non-API routes
 app.get('*', (req, res) => {
