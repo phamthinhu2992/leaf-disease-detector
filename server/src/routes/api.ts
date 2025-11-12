@@ -3,6 +3,7 @@ import multer from 'multer';
 import { predictController } from '../controllers/predictController';
 import weatherService from '../services/weatherService';
 import modelPerformanceService from '../services/modelPerformanceService';
+import bestLeafAIService from '../services/bestLeafAIService';
 
 const router = express.Router();
 
@@ -398,11 +399,79 @@ router.post('/predict-multi', upload.single('image'), async (req, res) => {
     }
 });
 
+// POST /api/predict-best - Best Leaf AI model prediction (NEW)
+router.post('/predict-best', upload.single('image'), async (req, res) => {
+    const startTime = Date.now();
+
+    try {
+        if (!req.file) {
+            return res.status(400).json({
+                success: false,
+                error: 'No image provided'
+            });
+        }
+
+        console.log('🌟 Best Leaf AI prediction starting...');
+
+        // Load model if not already loaded
+        const loaded = await bestLeafAIService.loadModel();
+        if (!loaded) {
+            return res.status(503).json({
+                success: false,
+                error: 'best_leaf_ai.h5 model not available',
+                processing_time_ms: Date.now() - startTime
+            });
+        }
+
+        // Run prediction
+        const prediction = await bestLeafAIService.predict(req.file.buffer);
+
+        if (!prediction) {
+            return res.status(500).json({
+                success: false,
+                error: 'Prediction failed',
+                processing_time_ms: Date.now() - startTime
+            });
+        }
+
+        console.log(`✅ Prediction: ${prediction.disease} (${(prediction.confidence * 100).toFixed(2)}%)`);
+
+        return res.json({
+            success: true,
+            source: 'best_leaf_ai.h5',
+            prediction: prediction.disease,
+            confidence: prediction.confidence,
+            probability: prediction.probability,
+            severity: prediction.severity,
+            treatment: prediction.treatment,
+            processing_time_ms: Date.now() - startTime
+        });
+
+    } catch (error) {
+        console.error('❌ Best Leaf AI prediction error:', error);
+        return res.status(500).json({
+            success: false,
+            error: error instanceof Error ? error.message : 'Prediction failed',
+            processing_time_ms: Date.now() - startTime
+        });
+    }
+});
+
+
 // GET /api/models - List available models
 router.get('/models', (req, res) => {
     return res.json({
         success: true,
         models: [
+            {
+                name: 'Best Leaf AI 🌟',
+                type: 'h5-premium',
+                endpoint: '/api/predict-best',
+                crop: 'General',
+                status: 'active',
+                accuracy: '95%+',
+                description: 'NEW! Premium AI model with highest accuracy - best_leaf_ai.h5 (50.8 MB)'
+            },
             {
                 name: 'Multi-Model Ensemble (6 Models)',
                 type: 'h5-ensemble',
